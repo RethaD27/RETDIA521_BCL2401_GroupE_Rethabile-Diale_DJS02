@@ -12,7 +12,4 @@ if (dividend === "" || divider === "") {
   return;
 }
 
-  const entries = new FormData(event.target);
-  const { dividend, divider } = Object.fromEntries(entries);
-  result.innerText = Math.floor(dividend / divider);
-});
+const quotient = Math.floor(parseInt(dividend) / parseInt(divider));
