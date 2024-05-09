@@ -12,4 +12,12 @@ if (dividend === "" || divider === "") {
   return;
 }
 
+if (parseInt(divider) === 0) {
+  result.innerText = "Division not performed. Invalid number provided. Try again";
+  console.error("Error: Division by zero");
+  return;
+}
+
 const quotient = Math.floor(parseInt(dividend) / parseInt(divider));
+result.innerText = `${quotient}`;
+});
