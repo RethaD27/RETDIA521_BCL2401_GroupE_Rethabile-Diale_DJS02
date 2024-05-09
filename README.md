@@ -1,4 +1,4 @@
-# DJS02 Project Brief: Whole Number Divider
+
 # Whole Number Division
 This is a simple HTML form for performing whole number division.
 
@@ -13,10 +13,9 @@ Click the "Calculate" button to perform the division.
 The quotient of the division will be displayed below the form.
 
 ## Files
-index.html: Contains the HTML structure of the page.
-scripts.js: Contains the JavaScript code for handling form submission and division calculation.
-styles.css: Contains the CSS styles for formatting the page.
+* index.html
+* scripts.js
+* styles.css
 
 ## Requirements
 A modern web browser with JavaScript enabled.
-
