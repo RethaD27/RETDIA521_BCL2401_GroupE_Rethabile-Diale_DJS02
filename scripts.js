@@ -13,11 +13,20 @@ if (dividend === "" || divider === "") {
 }
 
 if (parseInt(divider) === 0) {
+  result.classList.add("error-message");
   result.innerText = "Division not performed. Invalid number provided. Try again";
   console.error("Error: Division by zero");
   return;
 }
 
-const quotient = Math.floor(parseInt(dividend) / parseInt(divider));
+if (isNaN(parseInt(dividend)) || isNaN(parseInt(divider))) {
+  result.classList.add("critical-error");
+  result.innerText = "Something critical went wrong. Please reload the page";
+  console.error("Error: Invalid input provided");
+  return;
+}
+
+
+const quotient = Math.floor((dividend) / (divider));
 result.innerText = `${quotient}`;
 });
